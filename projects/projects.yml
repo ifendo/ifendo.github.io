@@ -1,0 +1,10 @@
+- title: Predicting House Prices with Machine Learning
+  path: https://example.com/house-prices
+  # Photo by Breno Assis on Unsplash https://unsplash.com/photos/aerial-photography-of-rural-r3WAWU5Fi5Q 
+  image: images/breno-assis-r3WAWU5Fi5Q-unsplash.jpg
+  description: >
+    This project involves using machine learning algorithms to predict house prices based on
+    various features such as location, size, and amenities. It includes data cleaning,
+    feature engineering, and model selection.
+  categories: [Python, Machine Learning, Data Cleaning]
+  date: 2024-01-01

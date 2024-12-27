@@ -1,0 +1,23 @@
+---
+title: "Jie Wang"
+subtitle: "Data Engineer | Statistical Programming"
+image: profile.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: solana
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/ifendo
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jie-wang-hb/
+---
+
+## Experience
+
+- Data Engineer: May 2022 - present
+
+- Statistical Programming: Apr 2016 - May 2022
+
+- Clinical Database Programmer: Jun 2012 - Apr 2016
