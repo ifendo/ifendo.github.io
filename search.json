@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Tools",
+    "section": "",
+    "text": "R Related\n\n\nPython Related\n\n\nAI Related"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Project\n\n\nDescription\n\n\nSkills\n\n\n\n\n\n\nPredicting House Prices with Machine Learning\n\n\nThis project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection. \n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/second-post/index.html",
+    "href": "blog/second-post/index.html",
+    "title": "Second Post",
+    "section": "",
+    "text": "This is for testing"
+  },
+  {
+    "objectID": "blog/27Dec2024/index.html",
+    "href": "blog/27Dec2024/index.html",
+    "title": "Blog Placeholder",
+    "section": "",
+    "text": "# header 1"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog Placeholder\n\n\n\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\n\n\nDec 27, 2024\n\n\nJie Wang\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\n\n\n\nPost description for second post\n\n\n\n\n\nDec 27, 2024\n\n\nJie Wang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  }
+]
