@@ -7,6 +7,7 @@
     "listing": "/blog/index.html",
     "items": [
       "/blog/27Dec2024/index.html",
+      "/blog/quarto-pdf/create_a_pdf_using_quarto.html",
       "/blog/second-post/index.html"
     ]
   }
