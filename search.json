@@ -7,6 +7,20 @@
     "text": "R Related\n\n\nPython Related\n\n\nAI Related"
   },
   {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Project\n\n\n\nDescription\n\n\n\nSkills\n\n\n\n\n\n\n\n\nPredicting House Prices with Machine Learning\n\n\nThis project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection. \n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jie Wang",
@@ -21,17 +35,59 @@
     "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html",
+    "title": "Prompt Engineering",
     "section": "",
-    "text": "Project\n\n\n\nDescription\n\n\n\nSkills\n\n\n\n\n\n\n\n\nPredicting House Prices with Machine Learning\n\n\nThis project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection. \n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
+    "text": "Prompt engineering has become an essential skill for developers working with AI models. Whether you’re using ChatGPT, Claude, or other language models, the quality of your prompts directly impacts the usefulness of the responses you get."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "No matching items"
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#core-principles",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#core-principles",
+    "title": "Prompt Engineering",
+    "section": "Core Principles",
+    "text": "Core Principles\nThe foundation of good prompt engineering rests on these key principles:\n\nUse role-playing - “Act as a senior data engineer mentoring a junior. Explain why data quality matters in ETL processes”\nBe specific and clear - Instead of “Write about AI”, try “Write a 300-word explanation of transformers for developers”\nProvide context and examples - Include role, audience, and format requirements\nUse structured formats - JSON, bullet points, step-by-step instructions\nIterate and refine - Start simple, add complexity gradually"
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#role-context-setting",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#role-context-setting",
+    "title": "Prompt Engineering",
+    "section": "Role & Context Setting",
+    "text": "Role & Context Setting\nSetting the right context dramatically improves response quality. Here’s how to do it effectively:\nSet the scene:\nYou are a senior Python developer reviewing FastAPI code.\nFocus on performance and security issues.\nYour audience is junior developers.\nProvide examples (Few-shot prompting):\nClassify sentiment:\n\"I love this!\" → Positive\n\"This is terrible\" → Negative\n\"It's okay\" → Neutral\n\nNow classify: \"Amazing quality!\"\nThis approach gives the AI model concrete examples of what you expect, leading to more consistent results."
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#advanced-techniques",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#advanced-techniques",
+    "title": "Prompt Engineering",
+    "section": "Advanced Techniques",
+    "text": "Advanced Techniques\n\nChain of Thought\nBreak down complex problems into steps:\nCalculate 15% tip on $47.50\n\nThink step by step:\n1. Convert percentage to decimal: 15% = 0.15\n2. Multiply: $47.50 × 0.15 = $7.125\n3. Round to nearest cent: $7.13\n\n\nOutput Formatting\nSpecify exactly how you want the response structured:\nRespond in JSON:\n{\"summary\": \"...\", \"confidence\": 0.85}\n\n\nConstraints\nSet clear boundaries:\n\nLength: “In exactly 100 words”\nStyle: “Use bullet points only”\n\nScope: “Python solutions only”"
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#common-pitfalls-best-practices",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#common-pitfalls-best-practices",
+    "title": "Prompt Engineering",
+    "section": "Common Pitfalls & Best Practices",
+    "text": "Common Pitfalls & Best Practices\n\n\n\n\n\n\nAvoid These Mistakes\n\n\n\n\nVague instructions that leave too much room for interpretation\nMissing context about your specific use case\nOverloading a single prompt with too many requirements\n\n\n\n\n\n\n\n\n\nBest Practices\n\n\n\n\nTest your prompts with edge cases\nDocument successful prompt patterns for reuse\nVersion control your prompts like code\nUse system prompts for consistency across conversations\nControl temperature settings (creativity vs precision)"
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#practical-examples",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#practical-examples",
+    "title": "Prompt Engineering",
+    "section": "Practical Examples",
+    "text": "Practical Examples\n\nCode Generation Prompt\nHere’s a comprehensive prompt template for generating production-ready code:\n&lt;role&gt;\nYou are a senior Python expert developer with expertise in clean, \nproduction-ready code. Your audience is experienced developers who \nvalue efficiency and maintainability.\n&lt;/role&gt;\n\n&lt;task&gt;\nGenerate Python code following these exact specifications:\n&lt;/task&gt;\n\n&lt;code_requirements&gt;\n- Python 3.10+ syntax with complete type annotations\n- PEP8 compliant (must pass `ruff check .`)\n- Prefer standard library; avoid unnecessary dependencies\n- Use only stable, popular packages when needed\n- Use `polars` instead of `pandas` for data operations\n- Include docstrings with examples\n- Minimal implementation - no over-engineering\n&lt;/code_requirements&gt;\n\n&lt;output_format&gt;\nComplete, runnable code with:\n1. Necessary imports at top\n2. Type-annotated functions with docstrings\n3. Main execution (if applicable)\n4. Small usage example\n5. Pytest unit test (if relevant)\n&lt;/output_format&gt;\n\n\nCode Review Prompt\nFor reviewing existing code:\n&lt;role&gt;\nYou are a senior Python code reviewer with expertise in \nproduction-ready code quality.\n&lt;/role&gt;\n\n&lt;review_requirements&gt;\n- Check Python 3.10+ syntax and type annotations\n- Verify PEP8 compliance\n- Evaluate package choices\n- Identify over-engineering or unnecessary complexity\n- Review comment quality\n&lt;/review_requirements&gt;\n\n&lt;output_format&gt;\n## Issues Found\n- **Critical**: [Security, functionality issues]\n- **Improvements**: [Code quality suggestions]\n- **Style**: [PEP8, formatting issues]\n\n## Recommendations\n[Specific, actionable suggestions with examples]\n&lt;/output_format&gt;"
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#key-takeaways",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#key-takeaways",
+    "title": "Prompt Engineering",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\nEffective prompt engineering is about clear communication with AI models. The time you invest in crafting good prompts pays dividends in the quality and usefulness of the responses you receive.\nStart with these fundamentals: 1. Be specific about what you want 2. Provide context and examples 3. Structure your requests clearly 4. Iterate and improve your prompts over time\nAs AI models continue to evolve, these prompt engineering skills will become increasingly valuable for developers who want to leverage AI effectively in their workflows."
+  },
+  {
+    "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#references",
+    "href": "blog/30Aug2025-prompt-engineering-tips/index.html#references",
+    "title": "Prompt Engineering",
+    "section": "References",
+    "text": "References\n\nOpenAI Prompting Guide\nAnthropic Prompt Engineering\nPrompt Engineering Guide"
   }
 ]
