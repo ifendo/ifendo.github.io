@@ -7,34 +7,6 @@
     "text": "R Related\n\n\nPython Related\n\n\nAI Related"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Project\n\n\n\nDescription\n\n\n\nSkills\n\n\n\n\n\n\n\n\nPredicting House Prices with Machine Learning\n\n\nThis project involves using machine learning algorithms to predict house prices based on various features such as location, size, and amenities. It includes data cleaning, feature engineering, and model selection. \n\n\nPython, Machine Learning, Data Cleaning\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jie Wang",
-    "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Jie Wang",
-    "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
-  },
-  {
     "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html",
     "href": "blog/30Aug2025-prompt-engineering-tips/index.html",
     "title": "Prompt Engineering",
@@ -89,5 +61,75 @@
     "title": "Prompt Engineering",
     "section": "References",
     "text": "References\n\nOpenAI Prompting Guide\nAnthropic Prompt Engineering\nPrompt Engineering Guide"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "",
+    "text": "Quick reference for basic MCP client and server implementation. Based on the official tutorial https://modelcontextprotocol.io/quickstart/client - keeping it here for easy access."
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#dependencies",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#dependencies",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "Dependencies",
+    "text": "Dependencies\nRequired Python packages:\npip install fastmcp openai python-dotenv\nOr with uv:\nuv add fastmcp openai python-dotenv"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#simple-mcp-server",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#simple-mcp-server",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "Simple MCP Server",
+    "text": "Simple MCP Server\nBasic server using FastMCP with a tool, prompt, and resource:\n\n\n\n\n\n\nShow MCP Server Code\n\n\n\n\n\n\n\nsample_mcp_server.py\n\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo server\")\n\n@mcp.tool\ndef add(a: int, b: int) -&gt; int:\n    \"\"\"add 2 numbers\"\"\"\n    return a + b\n\n@mcp.prompt\ndef tell_a_joke() -&gt; str:\n    \"\"\"Tell me a programming joke\"\"\"\n    return \"Please tell me a funny programming joke that would make a developer laugh!\"\n\n@mcp.resource(\"data://config\")\ndef get_config() -&gt; dict[str, str | list[str]]:\n    \"\"\"Provides application configuration as JSON.\"\"\"\n    return {\n        \"theme\": \"dark\",\n        \"version\": \"1.2.0\",\n        \"features\": [\"tools\", \"resources\"],\n    }\n\nif __name__ == \"__main__\":\n    mcp.run()"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#mcp-client-with-azure-openai",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#mcp-client-with-azure-openai",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "MCP Client with Azure OpenAI",
+    "text": "MCP Client with Azure OpenAI\nClient that connects to the server and integrates with Azure OpenAI:\n\n\n\n\n\n\nShow MCP Client Code\n\n\n\n\n\n\n\nsample_mcp_client.py\n\nimport asyncio\nfrom contextlib import AsyncExitStack\nimport json\nimport os\n\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\nfrom openai import AzureOpenAI\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nclass MCPClient:\n    def __init__(self):\n        self.session: ClientSession | None = None\n        self.exit_stack = AsyncExitStack()\n        \n        self.azure_client = AzureOpenAI(\n            api_key=os.getenv(\"AZURE_OPENAI_API_KEY\"),\n            api_version=os.getenv(\"AZURE_OPENAI_API_VERSION\", \"2024-10-21\"),\n            azure_endpoint=os.getenv(\"AZURE_OPENAI_ENDPOINT\")\n        )\n        self.deployment_name = os.getenv(\"AZURE_OPENAI_DEPLOYMENT_NAME\")\n\n    async def connect_to_server(self, server_script_path: str) -&gt; None:\n        \"\"\"Connect to an MCP server\"\"\"\n        is_python = server_script_path.endswith('.py')\n        command = \"python\" if is_python else \"node\"\n        \n        server_params = StdioServerParameters(\n            command=command,\n            args=[server_script_path],\n            env=None\n        )\n\n        stdio_transport = await self.exit_stack.enter_async_context(stdio_client(server_params))\n        self.stdio, self.write = stdio_transport\n        self.session = await self.exit_stack.enter_async_context(ClientSession(self.stdio, self.write))\n\n        await self.session.initialize()\n        \n        response = await self.session.list_tools()\n        tools = response.tools\n        print(\"Connected to server with tools:\", [tool.name for tool in tools])\n\n    async def process_query(self, query: str) -&gt; str:\n        \"\"\"Process a query using Azure OpenAI and available tools\"\"\"\n        messages = [{\"role\": \"user\", \"content\": query}]\n\n        response = await self.session.list_tools()\n        available_tools = [{\n            \"type\": \"function\",\n            \"function\": {\n                \"name\": tool.name,\n                \"description\": tool.description,\n                \"parameters\": tool.inputSchema\n            }\n        } for tool in response.tools]\n\n        response = self.azure_client.chat.completions.create(\n            model=self.deployment_name,\n            messages=messages,\n            tools=available_tools,\n            tool_choice=\"auto\"\n        )\n\n        final_text = []\n        assistant_message = response.choices[0].message\n\n        if assistant_message.content:\n            final_text.append(assistant_message.content)\n\n        messages.append({\n            \"role\": \"assistant\",\n            \"content\": assistant_message.content,\n            \"tool_calls\": assistant_message.tool_calls\n        })\n\n        if assistant_message.tool_calls:\n            for tool_call in assistant_message.tool_calls:\n                tool_name = tool_call.function.name\n                tool_args = json.loads(tool_call.function.arguments)\n\n                result = await self.session.call_tool(tool_name, tool_args)\n                final_text.append(f\"[Calling tool {tool_name} with args {tool_args}]\")\n\n                messages.append({\n                    \"role\": \"tool\",\n                    \"tool_call_id\": tool_call.id,\n                    \"content\": str(result.content)\n                })\n\n            response = self.azure_client.chat.completions.create(\n                model=self.deployment_name,\n                messages=messages,\n                tools=available_tools,\n                tool_choice=\"auto\"\n            )\n\n            if response.choices[0].message.content:\n                final_text.append(response.choices[0].message.content)\n\n        return \"\\n\".join(final_text)\n    \n    async def chat_loop(self) -&gt; None:\n        \"\"\"Run an interactive chat loop\"\"\"\n        print(\"MCP Client Started! Type 'quit' to exit.\")\n\n        while True:\n            try:\n                query = input(\"\\nQuery: \").strip()\n                if query.lower() == 'quit':\n                    break\n\n                response = await self.process_query(query)\n                print(f\"\\n{response}\")\n\n            except Exception as e:\n                print(f\"Error: {str(e)}\")\n\n    async def cleanup(self) -&gt; None:\n        \"\"\"Clean up resources\"\"\"\n        await self.exit_stack.aclose()\n\nasync def main() -&gt; None:\n    if len(sys.argv) &lt; 2:\n        print(\"Usage: python client.py &lt;path_to_server_script&gt;\")\n        sys.exit(1)\n\n    client = MCPClient()\n    try:\n        await client.connect_to_server(sys.argv[1])\n        await client.chat_loop()\n    finally:\n        await client.cleanup()\n\nif __name__ == \"__main__\":\n    import sys\n    asyncio.run(main())"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#usage",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#usage",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "Usage",
+    "text": "Usage\nRun the client with your server:\nuv run sample_mcp_client.py sample_mcp_server.py"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#how-it-works",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#how-it-works",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "How It Works",
+    "text": "How It Works\nServer provides:\n\nTools - Functions AI can call (add)\nPrompts - Message templates (tell_a_joke)\n\nResources - Static data (config)\n\nClient handles:\n\nServer connection via stdio\nTool discovery and formatting\nConversation flow between user, Azure OpenAI, and tools"
+  },
+  {
+    "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#development",
+    "href": "blog/30Jul2025-mcp-client-server-basics/index.html#development",
+    "title": "MCP Client & Server Examples - Quick Reference",
+    "section": "Development",
+    "text": "Development\nInspect your server with FastMCP’s dev mode:\nfastmcp dev sample_mcp_server.py\nThis gives you a web interface to test tools and explore server capabilities."
   }
 ]

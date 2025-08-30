@@ -2,11 +2,8 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/30Aug2025-prompt-engineering-tips/index.html"
+      "/blog/30Aug2025-prompt-engineering-tips/index.html",
+      "/blog/30Jul2025-mcp-client-server-basics/index.html"
     ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": []
   }
 ]
