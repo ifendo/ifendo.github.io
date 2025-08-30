@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ifendo.github.io/tools.html</loc>
-    <lastmod>2025-08-30T07:35:42.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ifendo.github.io/blog/index.html</loc>
-    <lastmod>2025-08-30T07:35:42.096Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ifendo.github.io/projects/index.html</loc>
-    <lastmod>2025-08-30T07:35:42.098Z</lastmod>
+    <lastmod>2025-08-30T07:55:33.450Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/index.html</loc>
-    <lastmod>2025-08-30T07:35:42.096Z</lastmod>
+    <lastmod>2025-08-30T07:55:33.448Z</lastmod>
   </url>
   <url>
-    <loc>https://ifendo.github.io/blog/27Dec2024/index.html</loc>
-    <lastmod>2025-08-30T07:35:42.096Z</lastmod>
+    <loc>https://ifendo.github.io/projects/index.html</loc>
+    <lastmod>2025-08-30T07:55:33.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ifendo.github.io/blog/index.html</loc>
+    <lastmod>2025-08-30T07:55:33.448Z</lastmod>
   </url>
 </urlset>
