@@ -1,8 +1,5 @@
 /*-- scss:defaults --*/
 
-// Sass Variables
-// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 $theme-lightgreen: #eeffee;
@@ -23,6 +20,8 @@ $font-size-root: 17px;
 h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   color: $theme-green;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .navbar * {
@@ -30,12 +29,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span.navbar-title {
-    color: $theme-green;
+  color: $theme-green;
   transition-duration: 0.5s;
   
   &:hover {
     color: lighten($theme-green, 10%);
     transition-duration: 0.5s;
   }
+}
+
+/* Improve code block styling */
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0.375rem;
+}
+
+/* Better link hover effects */
+a:hover {
+  text-decoration: underline;
+  transition: all 0.2s ease;
 }
 

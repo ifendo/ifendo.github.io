@@ -8,10 +8,6 @@ website:
   navbar:
     title: Jie Wang
     right:
-      - href: tools.qmd
-        text: Tools
-        icon: tools
-      - href: projects/index.qmd
       - href: blog/index.qmd
     tools:
       - icon: github
