@@ -1,0 +1,175 @@
+---
+title: "Prompt Engineering"
+date: "30Aug2025"
+categories: [ai, prompt-engineering, development, productivity]
+toc: true
+---
+
+Prompt engineering has become an essential skill for developers working with AI models. Whether you're using ChatGPT, Claude, or other language models, the quality of your prompts directly impacts the usefulness of the responses you get.
+
+## Core Principles
+
+The foundation of good prompt engineering rests on these key principles:
+
+- **Use role-playing** - "Act as a senior data engineer mentoring a junior. Explain why data quality matters in ETL processes"
+- **Be specific and clear** - Instead of "Write about AI", try "Write a 300-word explanation of transformers for developers"
+- **Provide context and examples** - Include role, audience, and format requirements
+- **Use structured formats** - JSON, bullet points, step-by-step instructions
+- **Iterate and refine** - Start simple, add complexity gradually
+
+## Role & Context Setting
+
+Setting the right context dramatically improves response quality. Here's how to do it effectively:
+
+**Set the scene:**
+```
+You are a senior Python developer reviewing FastAPI code.
+Focus on performance and security issues.
+Your audience is junior developers.
+```
+
+**Provide examples (Few-shot prompting):**
+```
+Classify sentiment:
+"I love this!" → Positive
+"This is terrible" → Negative
+"It's okay" → Neutral
+
+Now classify: "Amazing quality!"
+```
+
+This approach gives the AI model concrete examples of what you expect, leading to more consistent results.
+
+## Advanced Techniques
+
+### Chain of Thought
+
+Break down complex problems into steps:
+
+```
+Calculate 15% tip on $47.50
+
+Think step by step:
+1. Convert percentage to decimal: 15% = 0.15
+2. Multiply: $47.50 × 0.15 = $7.125
+3. Round to nearest cent: $7.13
+```
+
+### Output Formatting
+
+Specify exactly how you want the response structured:
+
+```
+Respond in JSON:
+{"summary": "...", "confidence": 0.85}
+```
+
+### Constraints
+
+Set clear boundaries:
+
+- **Length**: "In exactly 100 words"
+- **Style**: "Use bullet points only"  
+- **Scope**: "Python solutions only"
+
+## Common Pitfalls & Best Practices
+
+:::{.callout-warning}
+## Avoid These Mistakes
+- Vague instructions that leave too much room for interpretation
+- Missing context about your specific use case
+- Overloading a single prompt with too many requirements
+:::
+
+:::{.callout-tip}
+## Best Practices
+- Test your prompts with edge cases
+- Document successful prompt patterns for reuse
+- Version control your prompts like code
+- Use system prompts for consistency across conversations
+- Control temperature settings (creativity vs precision)
+:::
+
+## Practical Examples
+
+### Code Generation Prompt
+
+Here's a comprehensive prompt template for generating production-ready code:
+
+```markdown
+<role>
+You are a senior Python expert developer with expertise in clean, 
+production-ready code. Your audience is experienced developers who 
+value efficiency and maintainability.
+</role>
+
+<task>
+Generate Python code following these exact specifications:
+</task>
+
+<code_requirements>
+- Python 3.10+ syntax with complete type annotations
+- PEP8 compliant (must pass `ruff check .`)
+- Prefer standard library; avoid unnecessary dependencies
+- Use only stable, popular packages when needed
+- Use `polars` instead of `pandas` for data operations
+- Include docstrings with examples
+- Minimal implementation - no over-engineering
+</code_requirements>
+
+<output_format>
+Complete, runnable code with:
+1. Necessary imports at top
+2. Type-annotated functions with docstrings
+3. Main execution (if applicable)
+4. Small usage example
+5. Pytest unit test (if relevant)
+</output_format>
+```
+
+### Code Review Prompt
+
+For reviewing existing code:
+
+```markdown
+<role>
+You are a senior Python code reviewer with expertise in 
+production-ready code quality.
+</role>
+
+<review_requirements>
+- Check Python 3.10+ syntax and type annotations
+- Verify PEP8 compliance
+- Evaluate package choices
+- Identify over-engineering or unnecessary complexity
+- Review comment quality
+</review_requirements>
+
+<output_format>
+## Issues Found
+- **Critical**: [Security, functionality issues]
+- **Improvements**: [Code quality suggestions]
+- **Style**: [PEP8, formatting issues]
+
+## Recommendations
+[Specific, actionable suggestions with examples]
+</output_format>
+```
+
+## Key Takeaways
+
+Effective prompt engineering is about clear communication with AI models. The time you invest in crafting good prompts pays dividends in the quality and usefulness of the responses you receive.
+
+Start with these fundamentals:
+1. Be specific about what you want
+2. Provide context and examples
+3. Structure your requests clearly
+4. Iterate and improve your prompts over time
+
+As AI models continue to evolve, these prompt engineering skills will become increasingly valuable for developers who want to leverage AI effectively in their workflows.
+
+## References
+
+- [OpenAI Prompting Guide](https://github.com/openai/openai-cookbook)
+- [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
