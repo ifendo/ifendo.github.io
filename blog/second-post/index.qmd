@@ -1,7 +1,6 @@
 ---
 title: "Second Post"
 description: "Post description for second post"
-author: "Jie Wang"
 date: "27Dec2024"
 image: "cover.jpg"
 categories:

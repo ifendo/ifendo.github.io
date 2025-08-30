@@ -1,7 +1,6 @@
 ---
 title: "Create a PDF using Quarto"
 description: "PDF generation using Quarto"
-author: "Jie Wang"
 date: "01Jan2025"
 categories:
   - pdf
@@ -14,7 +13,7 @@ WIP
 
 # latex vs. typst
 
-![typst overview](https://quarto.org/docs/output-formats/typst.html#overview)
+[typst overview](https://quarto.org/docs/output-formats/typst.html#overview)
 
 
 ## quarto built-in `typst`
