@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ifendo.github.io/tools.html</loc>
-    <lastmod>2025-08-30T13:24:43.186Z</lastmod>
+    <lastmod>2025-09-07T06:56:58.828Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/30Aug2025-prompt-engineering-tips/index.html</loc>
-    <lastmod>2025-08-30T13:24:43.184Z</lastmod>
+    <lastmod>2025-09-07T06:56:58.826Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ifendo.github.io/blog/07Sep2025-fastmcp-http-transport/index.html</loc>
+    <lastmod>2025-09-07T06:56:58.826Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/index.html</loc>
-    <lastmod>2025-08-30T13:24:43.185Z</lastmod>
+    <lastmod>2025-09-07T06:56:58.827Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/index.html</loc>
-    <lastmod>2025-08-30T13:24:43.185Z</lastmod>
+    <lastmod>2025-09-07T06:56:58.827Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/30Jul2025-mcp-client-server-basics/index.html</loc>
-    <lastmod>2025-08-30T13:24:43.185Z</lastmod>
+    <lastmod>2025-09-07T06:56:58.827Z</lastmod>
   </url>
 </urlset>

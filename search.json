@@ -63,6 +63,41 @@
     "text": "References\n\nOpenAI Prompting Guide\nAnthropic Prompt Engineering\nPrompt Engineering Guide"
   },
   {
+    "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html",
+    "href": "blog/07Sep2025-fastmcp-http-transport/index.html",
+    "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
+    "section": "",
+    "text": "FastMCP provides an HTTP transport layer for Model Context Protocol (MCP) servers, but requires a proper MCP client to communicate. This post demonstrates the correct way to call an MCP server over HTTP using FastMCP."
+  },
+  {
+    "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html#what-is-fastmcp-http-transport",
+    "href": "blog/07Sep2025-fastmcp-http-transport/index.html#what-is-fastmcp-http-transport",
+    "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
+    "section": "What is FastMCP HTTP Transport?",
+    "text": "What is FastMCP HTTP Transport?\nFastMCP’s HTTP transport exposes MCP servers over HTTP, but maintains the MCP protocol requirements. Unlike REST APIs, you cannot use regular HTTP requests - you need an MCP-compatible client to handle the protocol properly."
+  },
+  {
+    "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html#basic-http-server-setup",
+    "href": "blog/07Sep2025-fastmcp-http-transport/index.html#basic-http-server-setup",
+    "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
+    "section": "Basic HTTP Server Setup",
+    "text": "Basic HTTP Server Setup\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo Server\")\n\n@mcp.tool()\ndef get_weather(city: str) -&gt; str:\n    \"\"\"Get weather information for a city.\"\"\"\n    return f\"The weather in {city} is sunny and 72°F\"\n\nif __name__ == \"__main__\":\n    mcp.run(transport=\"http\", port=8000)"
+  },
+  {
+    "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html#call-the-mcp-server",
+    "href": "blog/07Sep2025-fastmcp-http-transport/index.html#call-the-mcp-server",
+    "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
+    "section": "Call the MCP Server",
+    "text": "Call the MCP Server\nimport asyncio\nfrom fastmcp import Client\n\nclient = Client(\"http://localhost:8000/mcp\") # mcp is needed here\n\nasync def call_tool(city: str):\n    async with client:\n        result = await client.call_tool(\"get_weather\", {\"city\": city})\n        print(result)\n\nasyncio.run(call_tool(\"New York\"))\n\n\n\n\n\n\nNote\n\n\n\nWe need a FastMCP client or any LLM client that supports the MCP protocol to call the MCP server\nhttps://gofastmcp.com/getting-started/quickstart#call-your-server"
+  },
+  {
+    "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html#the-regular-post-request-wont-work",
+    "href": "blog/07Sep2025-fastmcp-http-transport/index.html#the-regular-post-request-wont-work",
+    "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
+    "section": "The regular POST request won’t work",
+    "text": "The regular POST request won’t work\nimport requests\n\n# Call the tool via regular HTTP\nresponse = requests.post(\n    \"http://localhost:8000/mcp/\",\n    json={\"city\": \"New York\"}\n)\n\nthis will get something like `INFO:     127.0.0.1:59128 - \"POST /mcp/ HTTP/1.1\" 406 Not Acceptable`"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jie Wang",
@@ -81,7 +116,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nFastMCP HTTP Transport: Calling MCP Servers Over HTTP\n\n\nSep 7, 2025\n\n\nmcp, http, fastmcp\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html",
