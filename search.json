@@ -39,7 +39,7 @@
     "href": "blog/30Aug2025-prompt-engineering-tips/index.html#common-pitfalls-best-practices",
     "title": "Prompt Engineering",
     "section": "Common Pitfalls & Best Practices",
-    "text": "Common Pitfalls & Best Practices\n\n\n\n\n\n\nAvoid These Mistakes\n\n\n\n\nVague instructions that leave too much room for interpretation\nMissing context about your specific use case\nOverloading a single prompt with too many requirements\n\n\n\n\n\n\n\n\n\nBest Practices\n\n\n\n\nTest your prompts with edge cases\nDocument successful prompt patterns for reuse\nVersion control your prompts like code\nUse system prompts for consistency across conversations\nControl temperature settings (creativity vs precision)"
+    "text": "Common Pitfalls & Best Practices\n\n\n\n\n\n\nWarningAvoid These Mistakes\n\n\n\n\nVague instructions that leave too much room for interpretation\nMissing context about your specific use case\nOverloading a single prompt with too many requirements\n\n\n\n\n\n\n\n\n\nTipBest Practices\n\n\n\n\nTest your prompts with edge cases\nDocument successful prompt patterns for reuse\nVersion control your prompts like code\nUse system prompts for consistency across conversations\nControl temperature settings (creativity vs precision)"
   },
   {
     "objectID": "blog/30Aug2025-prompt-engineering-tips/index.html#practical-examples",
@@ -61,6 +61,27 @@
     "title": "Prompt Engineering",
     "section": "References",
     "text": "References\n\nOpenAI Prompting Guide\nAnthropic Prompt Engineering\nPrompt Engineering Guide"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nUV: The Fast Python Package Manager\n\n\nSep 14, 2025\n\n\npython, tools, uv\n\n\n\n\n\n\nFastMCP HTTP Transport: Calling MCP Servers Over HTTP\n\n\nSep 7, 2025\n\n\nmcp, http, fastmcp\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
   },
   {
     "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html",
@@ -98,25 +119,46 @@
     "text": "The regular POST request won’t work\nimport requests\n\n# Call the tool via regular HTTP\nresponse = requests.post(\n    \"http://localhost:8000/mcp/\",\n    json={\"city\": \"New York\"}\n)\n\nthis will get something like `INFO:     127.0.0.1:59128 - \"POST /mcp/ HTTP/1.1\" 406 Not Acceptable`"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jie Wang",
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html",
+    "href": "blog/14Sep2025-uv-python-manager/index.html",
+    "title": "UV: The Fast Python Package Manager",
     "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+    "text": "UV is a drop-in replacement for pip and pip-tools that’s designed to be significantly faster and more reliable. Created by Astral (the team behind Ruff), it aims to solve common Python packaging problems while maintaining compatibility with existing workflows.\nKey benefits: - 10-100x faster than pip for most operations\n- Better dependency resolution with clear error messages\n- Cross-platform support (Windows, macOS, Linux)\n- Drop-in replacement for pip commands"
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Jie Wang",
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html#what-is-uv",
+    "href": "blog/14Sep2025-uv-python-manager/index.html#what-is-uv",
+    "title": "UV: The Fast Python Package Manager",
     "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+    "text": "UV is a drop-in replacement for pip and pip-tools that’s designed to be significantly faster and more reliable. Created by Astral (the team behind Ruff), it aims to solve common Python packaging problems while maintaining compatibility with existing workflows.\nKey benefits: - 10-100x faster than pip for most operations\n- Better dependency resolution with clear error messages\n- Cross-platform support (Windows, macOS, Linux)\n- Drop-in replacement for pip commands"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nFastMCP HTTP Transport: Calling MCP Servers Over HTTP\n\n\nSep 7, 2025\n\n\nmcp, http, fastmcp\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html#installation",
+    "href": "blog/14Sep2025-uv-python-manager/index.html#installation",
+    "title": "UV: The Fast Python Package Manager",
+    "section": "Installation",
+    "text": "Installation\nInstall uv using the official installer:\n# macOS\ncurl -LsSf https://astral.sh/uv/install.sh | sh"
+  },
+  {
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html#upgrading-uv",
+    "href": "blog/14Sep2025-uv-python-manager/index.html#upgrading-uv",
+    "title": "UV: The Fast Python Package Manager",
+    "section": "Upgrading uv",
+    "text": "Upgrading uv\nuv self update"
+  },
+  {
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html#features",
+    "href": "blog/14Sep2025-uv-python-manager/index.html#features",
+    "title": "UV: The Fast Python Package Manager",
+    "section": "Features",
+    "text": "Features\n\nPython versions\nuv python install\nuv python list\nuv python find\nuv python pin\nuv python uninstall\n\n\nScripts\nuv run\nuv add --script\nuv remove --script\n\n\nProjects\nuv init\nuv add\nuv remove\nuv sync\nuv lock\nuv run\nuv tree\nuv build\nuv publish\n\nProjects details\n\n\n\n\n\n\n\n\nDimension\nuv init --package mypackage\nuv init --lib mypackage\n\n\n\n\nPurpose / template\nCreates a packaged application (good for CLIs or installable apps).\nCreates a library intended to be imported and published.\n\n\nPackaging behavior\nAdds packaging metadata so the project is installable.\n--lib implies --package; libraries are always installable.\n\n\nLayout\nUses a src/ layout with a top‑level module directory and __init__.py.\nAlso uses a src/ layout with a top‑level module directory and __init__.py.\n\n\nType markers\nNo py.typed by default.\nIncludes py.typed so downstream users get inline type hints.\n\n\nBuild system\nAdds a [build-system] section (default uv_build), enabling builds/installs.\nAlso adds a [build-system] section (default uv_build).\n\n\nEntrypoint / scripts\nIncludes a console script entry in pyproject.toml (e.g., [project.scripts] mypackage = \"mypackage:main\").\nNo console script by default; focuses on importable APIs.\n\n\nHow you run it\nRun the generated command via uv run mypackage (mapped to mypackage:main).\nImport and call the API (e.g., import mypackage) or run Python directly.\n\n\nIntended use cases\nCommand‑line tools, apps you install and execute, projects that benefit from an entrypoint.\nReusable packages for other projects, publishable libraries with type hints.\n\n\nCLI/flag nuances\nExplicitly selects the “packaged application” template.\nSelecting --lib automatically selects packaging; same src/ layout but adds py.typed.\n\n\n\n\n\n\nTools\nuv tool install\nuv tool uninstall\nuv tool list"
+  },
+  {
+    "objectID": "blog/14Sep2025-uv-python-manager/index.html#references",
+    "href": "blog/14Sep2025-uv-python-manager/index.html#references",
+    "title": "UV: The Fast Python Package Manager",
+    "section": "References",
+    "text": "References\n\nUV Documentation"
   },
   {
     "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html",
@@ -137,14 +179,14 @@
     "href": "blog/30Jul2025-mcp-client-server-basics/index.html#simple-mcp-server",
     "title": "MCP Client & Server Examples - Quick Reference",
     "section": "Simple MCP Server",
-    "text": "Simple MCP Server\nBasic server using FastMCP with a tool, prompt, and resource:\n\n\n\n\n\n\nShow MCP Server Code\n\n\n\n\n\n\n\nsample_mcp_server.py\n\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo server\")\n\n@mcp.tool\ndef add(a: int, b: int) -&gt; int:\n    \"\"\"add 2 numbers\"\"\"\n    return a + b\n\n@mcp.prompt\ndef tell_a_joke() -&gt; str:\n    \"\"\"Tell me a programming joke\"\"\"\n    return \"Please tell me a funny programming joke that would make a developer laugh!\"\n\n@mcp.resource(\"data://config\")\ndef get_config() -&gt; dict[str, str | list[str]]:\n    \"\"\"Provides application configuration as JSON.\"\"\"\n    return {\n        \"theme\": \"dark\",\n        \"version\": \"1.2.0\",\n        \"features\": [\"tools\", \"resources\"],\n    }\n\nif __name__ == \"__main__\":\n    mcp.run()"
+    "text": "Simple MCP Server\nBasic server using FastMCP with a tool, prompt, and resource:\n\n\n\n\n\n\nNoteShow MCP Server Code\n\n\n\n\n\n\n\nsample_mcp_server.py\n\nfrom fastmcp import FastMCP\n\nmcp = FastMCP(\"Demo server\")\n\n@mcp.tool\ndef add(a: int, b: int) -&gt; int:\n    \"\"\"add 2 numbers\"\"\"\n    return a + b\n\n@mcp.prompt\ndef tell_a_joke() -&gt; str:\n    \"\"\"Tell me a programming joke\"\"\"\n    return \"Please tell me a funny programming joke that would make a developer laugh!\"\n\n@mcp.resource(\"data://config\")\ndef get_config() -&gt; dict[str, str | list[str]]:\n    \"\"\"Provides application configuration as JSON.\"\"\"\n    return {\n        \"theme\": \"dark\",\n        \"version\": \"1.2.0\",\n        \"features\": [\"tools\", \"resources\"],\n    }\n\nif __name__ == \"__main__\":\n    mcp.run()"
   },
   {
     "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#mcp-client-with-azure-openai",
     "href": "blog/30Jul2025-mcp-client-server-basics/index.html#mcp-client-with-azure-openai",
     "title": "MCP Client & Server Examples - Quick Reference",
     "section": "MCP Client with Azure OpenAI",
-    "text": "MCP Client with Azure OpenAI\nClient that connects to the server and integrates with Azure OpenAI:\n\n\n\n\n\n\nShow MCP Client Code\n\n\n\n\n\n\n\nsample_mcp_client.py\n\nimport asyncio\nfrom contextlib import AsyncExitStack\nimport json\nimport os\n\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\nfrom openai import AzureOpenAI\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nclass MCPClient:\n    def __init__(self):\n        self.session: ClientSession | None = None\n        self.exit_stack = AsyncExitStack()\n        \n        self.azure_client = AzureOpenAI(\n            api_key=os.getenv(\"AZURE_OPENAI_API_KEY\"),\n            api_version=os.getenv(\"AZURE_OPENAI_API_VERSION\", \"2024-10-21\"),\n            azure_endpoint=os.getenv(\"AZURE_OPENAI_ENDPOINT\")\n        )\n        self.deployment_name = os.getenv(\"AZURE_OPENAI_DEPLOYMENT_NAME\")\n\n    async def connect_to_server(self, server_script_path: str) -&gt; None:\n        \"\"\"Connect to an MCP server\"\"\"\n        is_python = server_script_path.endswith('.py')\n        command = \"python\" if is_python else \"node\"\n        \n        server_params = StdioServerParameters(\n            command=command,\n            args=[server_script_path],\n            env=None\n        )\n\n        stdio_transport = await self.exit_stack.enter_async_context(stdio_client(server_params))\n        self.stdio, self.write = stdio_transport\n        self.session = await self.exit_stack.enter_async_context(ClientSession(self.stdio, self.write))\n\n        await self.session.initialize()\n        \n        response = await self.session.list_tools()\n        tools = response.tools\n        print(\"Connected to server with tools:\", [tool.name for tool in tools])\n\n    async def process_query(self, query: str) -&gt; str:\n        \"\"\"Process a query using Azure OpenAI and available tools\"\"\"\n        messages = [{\"role\": \"user\", \"content\": query}]\n\n        response = await self.session.list_tools()\n        available_tools = [{\n            \"type\": \"function\",\n            \"function\": {\n                \"name\": tool.name,\n                \"description\": tool.description,\n                \"parameters\": tool.inputSchema\n            }\n        } for tool in response.tools]\n\n        response = self.azure_client.chat.completions.create(\n            model=self.deployment_name,\n            messages=messages,\n            tools=available_tools,\n            tool_choice=\"auto\"\n        )\n\n        final_text = []\n        assistant_message = response.choices[0].message\n\n        if assistant_message.content:\n            final_text.append(assistant_message.content)\n\n        messages.append({\n            \"role\": \"assistant\",\n            \"content\": assistant_message.content,\n            \"tool_calls\": assistant_message.tool_calls\n        })\n\n        if assistant_message.tool_calls:\n            for tool_call in assistant_message.tool_calls:\n                tool_name = tool_call.function.name\n                tool_args = json.loads(tool_call.function.arguments)\n\n                result = await self.session.call_tool(tool_name, tool_args)\n                final_text.append(f\"[Calling tool {tool_name} with args {tool_args}]\")\n\n                messages.append({\n                    \"role\": \"tool\",\n                    \"tool_call_id\": tool_call.id,\n                    \"content\": str(result.content)\n                })\n\n            response = self.azure_client.chat.completions.create(\n                model=self.deployment_name,\n                messages=messages,\n                tools=available_tools,\n                tool_choice=\"auto\"\n            )\n\n            if response.choices[0].message.content:\n                final_text.append(response.choices[0].message.content)\n\n        return \"\\n\".join(final_text)\n    \n    async def chat_loop(self) -&gt; None:\n        \"\"\"Run an interactive chat loop\"\"\"\n        print(\"MCP Client Started! Type 'quit' to exit.\")\n\n        while True:\n            try:\n                query = input(\"\\nQuery: \").strip()\n                if query.lower() == 'quit':\n                    break\n\n                response = await self.process_query(query)\n                print(f\"\\n{response}\")\n\n            except Exception as e:\n                print(f\"Error: {str(e)}\")\n\n    async def cleanup(self) -&gt; None:\n        \"\"\"Clean up resources\"\"\"\n        await self.exit_stack.aclose()\n\nasync def main() -&gt; None:\n    if len(sys.argv) &lt; 2:\n        print(\"Usage: python client.py &lt;path_to_server_script&gt;\")\n        sys.exit(1)\n\n    client = MCPClient()\n    try:\n        await client.connect_to_server(sys.argv[1])\n        await client.chat_loop()\n    finally:\n        await client.cleanup()\n\nif __name__ == \"__main__\":\n    import sys\n    asyncio.run(main())"
+    "text": "MCP Client with Azure OpenAI\nClient that connects to the server and integrates with Azure OpenAI:\n\n\n\n\n\n\nNoteShow MCP Client Code\n\n\n\n\n\n\n\nsample_mcp_client.py\n\nimport asyncio\nfrom contextlib import AsyncExitStack\nimport json\nimport os\n\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\nfrom openai import AzureOpenAI\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nclass MCPClient:\n    def __init__(self):\n        self.session: ClientSession | None = None\n        self.exit_stack = AsyncExitStack()\n        \n        self.azure_client = AzureOpenAI(\n            api_key=os.getenv(\"AZURE_OPENAI_API_KEY\"),\n            api_version=os.getenv(\"AZURE_OPENAI_API_VERSION\", \"2024-10-21\"),\n            azure_endpoint=os.getenv(\"AZURE_OPENAI_ENDPOINT\")\n        )\n        self.deployment_name = os.getenv(\"AZURE_OPENAI_DEPLOYMENT_NAME\")\n\n    async def connect_to_server(self, server_script_path: str) -&gt; None:\n        \"\"\"Connect to an MCP server\"\"\"\n        is_python = server_script_path.endswith('.py')\n        command = \"python\" if is_python else \"node\"\n        \n        server_params = StdioServerParameters(\n            command=command,\n            args=[server_script_path],\n            env=None\n        )\n\n        stdio_transport = await self.exit_stack.enter_async_context(stdio_client(server_params))\n        self.stdio, self.write = stdio_transport\n        self.session = await self.exit_stack.enter_async_context(ClientSession(self.stdio, self.write))\n\n        await self.session.initialize()\n        \n        response = await self.session.list_tools()\n        tools = response.tools\n        print(\"Connected to server with tools:\", [tool.name for tool in tools])\n\n    async def process_query(self, query: str) -&gt; str:\n        \"\"\"Process a query using Azure OpenAI and available tools\"\"\"\n        messages = [{\"role\": \"user\", \"content\": query}]\n\n        response = await self.session.list_tools()\n        available_tools = [{\n            \"type\": \"function\",\n            \"function\": {\n                \"name\": tool.name,\n                \"description\": tool.description,\n                \"parameters\": tool.inputSchema\n            }\n        } for tool in response.tools]\n\n        response = self.azure_client.chat.completions.create(\n            model=self.deployment_name,\n            messages=messages,\n            tools=available_tools,\n            tool_choice=\"auto\"\n        )\n\n        final_text = []\n        assistant_message = response.choices[0].message\n\n        if assistant_message.content:\n            final_text.append(assistant_message.content)\n\n        messages.append({\n            \"role\": \"assistant\",\n            \"content\": assistant_message.content,\n            \"tool_calls\": assistant_message.tool_calls\n        })\n\n        if assistant_message.tool_calls:\n            for tool_call in assistant_message.tool_calls:\n                tool_name = tool_call.function.name\n                tool_args = json.loads(tool_call.function.arguments)\n\n                result = await self.session.call_tool(tool_name, tool_args)\n                final_text.append(f\"[Calling tool {tool_name} with args {tool_args}]\")\n\n                messages.append({\n                    \"role\": \"tool\",\n                    \"tool_call_id\": tool_call.id,\n                    \"content\": str(result.content)\n                })\n\n            response = self.azure_client.chat.completions.create(\n                model=self.deployment_name,\n                messages=messages,\n                tools=available_tools,\n                tool_choice=\"auto\"\n            )\n\n            if response.choices[0].message.content:\n                final_text.append(response.choices[0].message.content)\n\n        return \"\\n\".join(final_text)\n    \n    async def chat_loop(self) -&gt; None:\n        \"\"\"Run an interactive chat loop\"\"\"\n        print(\"MCP Client Started! Type 'quit' to exit.\")\n\n        while True:\n            try:\n                query = input(\"\\nQuery: \").strip()\n                if query.lower() == 'quit':\n                    break\n\n                response = await self.process_query(query)\n                print(f\"\\n{response}\")\n\n            except Exception as e:\n                print(f\"Error: {str(e)}\")\n\n    async def cleanup(self) -&gt; None:\n        \"\"\"Clean up resources\"\"\"\n        await self.exit_stack.aclose()\n\nasync def main() -&gt; None:\n    if len(sys.argv) &lt; 2:\n        print(\"Usage: python client.py &lt;path_to_server_script&gt;\")\n        sys.exit(1)\n\n    client = MCPClient()\n    try:\n        await client.connect_to_server(sys.argv[1])\n        await client.chat_loop()\n    finally:\n        await client.cleanup()\n\nif __name__ == \"__main__\":\n    import sys\n    asyncio.run(main())"
   },
   {
     "objectID": "blog/30Jul2025-mcp-client-server-basics/index.html#usage",
