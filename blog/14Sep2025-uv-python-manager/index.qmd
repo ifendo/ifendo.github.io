@@ -1,0 +1,93 @@
+---
+title: "UV: The Fast Python Package Manager"
+date: "14Sep2025"
+categories: [python, tools, uv]
+toc: true
+---
+
+## What is UV?
+
+UV is a drop-in replacement for pip and pip-tools that's designed to be significantly faster and more reliable. Created by Astral (the team behind Ruff), it aims to solve common Python packaging problems while maintaining compatibility with existing workflows.
+
+Key benefits: - **10-100x faster** than pip for most operations
+
+\- **Better dependency resolution** with clear error messages
+
+\- **Cross-platform** support (Windows, macOS, Linux)
+
+\- **Drop-in replacement** for pip commands
+
+## Installation
+
+Install uv using the official installer:
+
+``` bash
+# macOS
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+## Upgrading uv
+
+``` bash
+uv self update
+```
+
+## Features
+
+### Python versions
+
+``` bash
+uv python install
+uv python list
+uv python find
+uv python pin
+uv python uninstall
+```
+
+### Scripts
+
+``` bash
+uv run
+uv add --script
+uv remove --script
+```
+
+### Projects
+
+``` bash
+uv init
+uv add
+uv remove
+uv sync
+uv lock
+uv run
+uv tree
+uv build
+uv publish
+```
+
+#### Projects details
+
+| Dimension | `uv init --package mypackage` | `uv init --lib mypackage` |
+|------------------------|------------------------|------------------------|
+| **Purpose / template** | Creates a **packaged application** (good for CLIs or installable apps). | Creates a **library** intended to be imported and published. |
+| **Packaging behavior** | Adds packaging metadata so the project is **installable**. | **`--lib` implies `--package`**; libraries are always installable. |
+| **Layout** | Uses a **`src/` layout** with a top‑level module directory and `__init__.py`. | Also uses a **`src/` layout** with a top‑level module directory and `__init__.py`. |
+| **Type markers** | No `py.typed` by default. | Includes **`py.typed`** so downstream users get inline type hints. |
+| **Build system** | Adds a `[build-system]` section (default `uv_build`), enabling builds/installs. | Also adds a `[build-system]` section (default `uv_build`). |
+| **Entrypoint / scripts** | Includes a **console script** entry in `pyproject.toml` (e.g., `[project.scripts] mypackage = "mypackage:main"`). | **No console script** by default; focuses on importable APIs. |
+| **How you run it** | Run the generated command via `uv run mypackage` (mapped to `mypackage:main`). | Import and call the API (e.g., `import mypackage`) or run Python directly. |
+| **Intended use cases** | Command‑line tools, apps you install and execute, projects that benefit from an entrypoint. | Reusable packages for other projects, publishable libraries with type hints. |
+| **CLI/flag nuances** | Explicitly selects the “packaged application” template. | Selecting `--lib` **automatically selects packaging**; same `src/` layout but adds `py.typed`. |
+
+### Tools
+
+``` bash
+uv tool install
+uv tool uninstall
+uv tool list
+```
+
+## References
+
+-   [UV Documentation](https://docs.astral.sh/uv/)
