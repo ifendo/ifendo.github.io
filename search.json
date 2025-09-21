@@ -67,21 +67,7 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nUV: The Fast Python Package Manager\n\n\nSep 14, 2025\n\n\npython, tools, uv\n\n\n\n\n\n\nFastMCP HTTP Transport: Calling MCP Servers Over HTTP\n\n\nSep 7, 2025\n\n\nmcp, http, fastmcp\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jie Wang",
-    "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Jie Wang",
-    "section": "",
-    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nDate\n\n\n\nCategories\n\n\n\n\n\n\n\n\nUV: The Fast Python Package Manager\n\n\nSep 14, 2025\n\n\npython, tools, uv\n\n\n\n\n\n\nFastMCP HTTP Transport: Calling MCP Servers Over HTTP\n\n\nSep 7, 2025\n\n\nmcp, http, fastmcp\n\n\n\n\n\n\nPrompt Engineering\n\n\nAug 30, 2025\n\n\nai, prompt-engineering, development, productivity\n\n\n\n\n\n\nMCP Client & Server Examples - Quick Reference\n\n\nJul 30, 2025\n\n\nmcp, python, AI\n\n\n\n\n\n\nMy Notes on the LLM CLI Tool\n\n\nSep 21, 2024\n\n\nai, cli, tools, tutorial\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/07Sep2025-fastmcp-http-transport/index.html",
@@ -117,6 +103,83 @@
     "title": "FastMCP HTTP Transport: Calling MCP Servers Over HTTP",
     "section": "The regular POST request won’t work",
     "text": "The regular POST request won’t work\nimport requests\n\n# Call the tool via regular HTTP\nresponse = requests.post(\n    \"http://localhost:8000/mcp/\",\n    json={\"city\": \"New York\"}\n)\n\nthis will get something like `INFO:     127.0.0.1:59128 - \"POST /mcp/ HTTP/1.1\" 406 Not Acceptable`"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Jie Wang",
+    "section": "",
+    "text": "Data Engineer: May 2022 - present\nStatistical Programming: Apr 2016 - May 2022\nClinical Database Programmer: Jun 2012 - Apr 2016"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "",
+    "text": "The LLM CLI tool by Simon Willison provides a simple yet powerful way to interact with various language models directly from your command line. This guide covers installation, configuration, and practical usage patterns to help you get started with this versatile tool."
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#links",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#links",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Links",
+    "text": "Links\n\nGitHub: https://github.com/simonw/llm\nDocumentation: https://llm.datasette.io/en/stable/"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#installation",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#installation",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Installation",
+    "text": "Installation\nUsing uv:\nuv tool install llm"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#plugin-installation",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#plugin-installation",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Plugin Installation",
+    "text": "Plugin Installation\nInstall plugins for specific providers (using Azure as example):\nllm install llm-azure\n\nllm-azure: https://github.com/fabge/llm-azure"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#api-key-configuration",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#api-key-configuration",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "API Key Configuration",
+    "text": "API Key Configuration\nSet your API key:\nllm keys set azure"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#azure-setup",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#azure-setup",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Azure Setup",
+    "text": "Azure Setup\nAdd a configuration file to the required azure directory of llm installation:\ndirname $(llm logs path)\nThe configuration file should look like:\n- model_id: gpt-4-32k\n  model_name: gpt-4-32k\n  api_base: https://your_deployment.openai.azure.com/\n  api_version: '2023-05-15'\n\n- model_id: text-embedding-3-small\n  embedding_model: true\n  model_name: text-embedding-3-small\n  api_base: https://your_deployment.openai.azure.com/\n  api_version: '2023-05-14'\n\nmodel_id: Used by the LLM CLI\nmodel_name: Passed to the Azure API"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#set-default-model",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#set-default-model",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Set Default Model",
+    "text": "Set Default Model\nllm models default &lt;model_id&gt;"
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#using-llm-prompts",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#using-llm-prompts",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Using LLM Prompts",
+    "text": "Using LLM Prompts\n\nPipe Input\ncat my_python_script.py | llm \"explain this code\"\n\n\nAttachments\nllm \"describe this image\" -a https://static.simonwillison.net/static/2024/pelicans.jpg\nSupports both URLs and file paths.\n\n\nSystem Prompts\necho \"import fastapi\" | llm \"explain this code\" -s \"You are a python expert and explain complex concepts concisely with simple examples\""
+  },
+  {
+    "objectID": "blog/21Sep2024-llm-cli-notes/index.html#templates",
+    "href": "blog/21Sep2024-llm-cli-notes/index.html#templates",
+    "title": "My Notes on the LLM CLI Tool",
+    "section": "Templates",
+    "text": "Templates\n\nList Templates\nllm templates\n\n\nEdit Templates\nllm templates edit summarize\nProvide default values for parameters:\nprompt: 'Translate to $language: $input'\ndefaults:\n  language: 中文\n\n\nUse Templates\nllm -t translate -p language '中文' \"I love you\""
   },
   {
     "objectID": "blog/14Sep2025-uv-python-manager/index.html",

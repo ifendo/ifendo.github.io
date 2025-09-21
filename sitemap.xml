@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ifendo.github.io/tools.html</loc>
-    <lastmod>2025-09-14T09:43:36.113Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.305Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/30Aug2025-prompt-engineering-tips/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.112Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.303Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.113Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ifendo.github.io/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.113Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.304Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/07Sep2025-fastmcp-http-transport/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.111Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ifendo.github.io/index.html</loc>
+    <lastmod>2025-09-21T09:29:56.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ifendo.github.io/blog/21Sep2024-llm-cli-notes/index.html</loc>
+    <lastmod>2025-09-21T09:29:56.303Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/14Sep2025-uv-python-manager/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.112Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.303Z</lastmod>
   </url>
   <url>
     <loc>https://ifendo.github.io/blog/30Jul2025-mcp-client-server-basics/index.html</loc>
-    <lastmod>2025-09-14T09:43:36.113Z</lastmod>
+    <lastmod>2025-09-21T09:29:56.304Z</lastmod>
   </url>
 </urlset>
