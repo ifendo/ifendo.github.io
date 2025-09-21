@@ -2,11 +2,11 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/21Sep2025-llm-cli-notes/index.html",
       "/blog/14Sep2025-uv-python-manager/index.html",
       "/blog/07Sep2025-fastmcp-http-transport/index.html",
       "/blog/30Aug2025-prompt-engineering-tips/index.html",
-      "/blog/30Jul2025-mcp-client-server-basics/index.html",
-      "/blog/21Sep2024-llm-cli-notes/index.html"
+      "/blog/30Jul2025-mcp-client-server-basics/index.html"
     ]
   }
 ]
