@@ -1,6 +1,6 @@
 ---
 title: "My Notes on the LLM CLI Tool"
-date: "21Sep2024"
+date: "21Sep2025"
 categories: [ai, cli, tools, tutorial]
 ---
 
