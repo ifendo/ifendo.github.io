@@ -1,0 +1,120 @@
+---
+title: "My Notes on the LLM CLI Tool"
+date: "21Sep2024"
+categories: [ai, cli, tools, tutorial]
+---
+
+The LLM CLI tool by Simon Willison provides a simple yet powerful way to interact with various language models directly from your command line. This guide covers installation, configuration, and practical usage patterns to help you get started with this versatile tool.
+
+## Links
+
+- GitHub: <https://github.com/simonw/llm>
+- Documentation: <https://llm.datasette.io/en/stable/>
+
+## Installation
+
+Using uv:
+
+```bash
+uv tool install llm
+```
+
+## Plugin Installation
+
+Install plugins for specific providers (using Azure as example):
+
+```bash
+llm install llm-azure
+```
+
+- llm-azure: <https://github.com/fabge/llm-azure>
+
+## API Key Configuration
+
+Set your API key:
+
+```bash
+llm keys set azure
+```
+
+## Azure Setup
+
+Add a configuration file to the required `azure` directory of llm installation:
+
+```bash
+dirname $(llm logs path)
+```
+
+The configuration file should look like:
+
+```yaml
+- model_id: gpt-4-32k
+  model_name: gpt-4-32k
+  api_base: https://your_deployment.openai.azure.com/
+  api_version: '2023-05-15'
+
+- model_id: text-embedding-3-small
+  embedding_model: true
+  model_name: text-embedding-3-small
+  api_base: https://your_deployment.openai.azure.com/
+  api_version: '2023-05-14'
+```
+
+- `model_id`: Used by the LLM CLI
+- `model_name`: Passed to the Azure API
+
+## Set Default Model
+
+```bash
+llm models default <model_id>
+```
+
+## Using LLM Prompts
+
+### Pipe Input
+
+```bash
+cat my_python_script.py | llm "explain this code"
+```
+
+### Attachments
+
+```bash
+llm "describe this image" -a https://static.simonwillison.net/static/2024/pelicans.jpg
+```
+
+Supports both URLs and file paths.
+
+### System Prompts
+
+```bash
+echo "import fastapi" | llm "explain this code" -s "You are a python expert and explain complex concepts concisely with simple examples"
+```
+
+## Templates
+
+### List Templates
+
+```bash
+llm templates
+```
+
+### Edit Templates
+
+```bash
+llm templates edit summarize
+```
+
+Provide default values for parameters:
+
+```yaml
+prompt: 'Translate to $language: $input'
+defaults:
+  language: 中文
+```
+
+### Use Templates
+
+```bash
+llm -t translate -p language '中文' "I love you"
+```
